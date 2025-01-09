@@ -31,6 +31,7 @@
                     "visual-studio-code"
                     "keka"
                     "pycharm"
+                    "webstorm"
                     "wezterm"
                     "google-chrome"
                     "elmedia-player"
@@ -40,7 +41,9 @@
                     "bruno"
                     "discord"
                     "telegram"
-                    "fleet" 
+                    "fleet"
+                    "orbstack"
+                    "ghostty"
                 ];
 
                 masApps = {
@@ -73,17 +76,22 @@
                     mineffect = "genie";
                     magnification = true;
                     persistent-apps = [
+                        "/Applications/Ghostty.app"
                         "/Applications/WezTerm.app"
                         "/Applications/Spark.app"
                         "/System/Cryptexes/App/System/Applications/Safari.app"
                         "/Applications/Google Chrome.app"
                         "/Applications/Pycharm.app"
+                        "/Applications/WebStorm.app"
                         "/Applications/Visual Studio Code.app"
                         "/System/Applications/Photos.app"
                         "/System/Applications/Calendar.app"
                         "/System/Applications/Contacts.app"
                         "/System/Applications/Reminders.app"
                         "/System/Applications/Notes.app"
+                        "/Applications/Microsoft Word.app"
+                        "/Applications/Microsoft Excel.app"
+                        "/Applications/Microsoft PowerPoint.app"
                         "/System/Applications/Music.app"
                         "/System/Applications/App Store.app"
                         "/System/Applications/System Settings.app"

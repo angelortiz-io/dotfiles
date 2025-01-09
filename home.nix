@@ -15,6 +15,7 @@
             neovim
             starship
             htop
+            mise
         ];
         file = {
             ".zshrc".source = ./dotfiles/zshrc/zshrc;
