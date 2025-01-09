@@ -12,6 +12,7 @@
         };
         packages = with pkgs; [
             eza
+            bat
             neovim
             starship
             htop

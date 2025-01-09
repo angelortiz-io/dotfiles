@@ -1,1 +1,2 @@
 eval "$(starship init zsh)"
+eval "$(/etc/profiles/per-user/coder/bin/mise activate zsh)"
