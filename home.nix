@@ -5,11 +5,6 @@
     home = {
         enableNixpkgsReleaseCheck = true;
         stateVersion = "24.11";
-        shellAliases = {
-            ll = "eza -lF --color-scale --no-user --no-time --no-permissions --group-directories-first --icons -a";
-            ls = "eza -lF --group-directories-first --icons -a";
-            ".." = "cd ..";
-        };
         packages = with pkgs; [
             eza
             bat
@@ -18,10 +13,6 @@
             htop
             mise
         ];
-        file = {
-            ".zshrc".source = ./dotfiles/zshrc/zshrc;
-            ".wezterm.lua".source = ./dotfiles/wezterm/wezterm.lua;
-        };
     };
     # Let Home Manager install and manage itself.
     programs = {
@@ -41,6 +32,19 @@
             enableCompletion = true;
             autosuggestion.enable = true;
             syntaxHighlighting.enable = true;
+            shellAliases = {
+                ll = "eza -lF --color-scale --no-user --no-time --no-permissions --group-directories-first --icons -a";
+                ls = "eza -lF --group-directories-first --icons -a";
+                ".." = "cd ..";
+            };
+            history = {
+                save = 1;
+                size = 10000;
+            };
+            initExtra = ''
+              eval "$(starship init zsh)"
+              eval "$(/etc/profiles/per-user/coder/bin/mise activate zsh)"
+            '';
         };
     };
 }
