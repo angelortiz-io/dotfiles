@@ -111,7 +111,7 @@
                 finder = {
                     ShowPathbar = true;
                     ShowStatusBar = true;
-                    AppleShowAllFiles = true;
+                    AppleShowAllFiles = false;
                 };
                 menuExtraClock = {
                     Show24Hour = true;
