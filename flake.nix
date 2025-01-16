@@ -44,6 +44,8 @@
                     "fleet"
                     "orbstack"
                     "ghostty"
+                    "brave-browser"
+                    "arc"
                 ];
 
                 masApps = {
@@ -77,10 +79,10 @@
                     magnification = true;
                     persistent-apps = [
                         "/Applications/Ghostty.app"
-                        "/Applications/WezTerm.app"
                         "/Applications/Spark.app"
                         "/System/Cryptexes/App/System/Applications/Safari.app"
-                        "/Applications/Google Chrome.app"
+                        "/Applications/Arc.app"
+                        "/Applications/Brave Browser.app"
                         "/Applications/Pycharm.app"
                         "/Applications/WebStorm.app"
                         "/Applications/Visual Studio Code.app"
