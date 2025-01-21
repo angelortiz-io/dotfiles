@@ -46,6 +46,7 @@
                     "ghostty"
                     "brave-browser"
                     "arc"
+                    "whatsapp"
                 ];
 
                 masApps = {
