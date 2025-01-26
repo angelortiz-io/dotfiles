@@ -12,8 +12,11 @@
             starship
             htop
             mise
+            awscli2
+            google-cloud-sdk
         ];
     };
+
     # Let Home Manager install and manage itself.
     programs = {
         home-manager = {
@@ -44,7 +47,21 @@
             initExtra = ''
               eval "$(starship init zsh)"
               eval "$(/etc/profiles/per-user/coder/bin/mise activate zsh)"
+
+              if type gcloud &>/dev/null; then
+                source $(gcloud --format="value(config.paths.bash_completion)" || true)
+              fi
             '';
         };
+        awscli = {
+            enable = true;
+        };
+        # environment = {
+        #     variables = {
+        #         GOOGLE_APPLICATION_CREDENTIALS = "/path/to/your-service-account-file.json";
+        #         GCLOUD_PROJECT = "your-project-id";
+        #         GCLOUD_REGION = "us-central1";  # Optional, change as necessary
+        #     };
+        # };
     };
 }
