@@ -32,7 +32,6 @@
                     "keka"
                     "pycharm"
                     "webstorm"
-                    "wezterm"
                     "google-chrome"
                     "elmedia-player"
                     "gimp"
@@ -45,8 +44,13 @@
                     "orbstack"
                     "ghostty"
                     "brave-browser"
-                    "arc"
+                    "google-chrome"
+		    "google-chrome@canary"
                     "whatsapp"
+		    "slack"
+		    "lm-studio"
+		    "transmission"
+		    "zoom"
                 ];
 
                 masApps = {
@@ -82,7 +86,8 @@
                         "/Applications/Ghostty.app"
                         "/Applications/Spark.app"
                         "/System/Cryptexes/App/System/Applications/Safari.app"
-                        "/Applications/Arc.app"
+                        "/Applications/Google Chrome.app"
+                        "/Applications/Google Chrome Canary.app"
                         "/Applications/Brave Browser.app"
                         "/Applications/Pycharm.app"
                         "/Applications/WebStorm.app"
