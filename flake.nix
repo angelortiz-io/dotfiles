@@ -45,12 +45,13 @@
                     "ghostty"
                     "brave-browser"
                     "google-chrome"
-		    "google-chrome@canary"
+		            "google-chrome@canary"
                     "whatsapp"
-		    "slack"
-		    "lm-studio"
-		    "transmission"
-		    "zoom"
+                    "slack"
+                    "lm-studio"
+                    "transmission"
+                    "zoom"
+                    "android-studio"
                 ];
 
                 masApps = {
@@ -65,7 +66,6 @@
                 pkgs.nerd-fonts.fira-code
             ];
 
-            services.nix-daemon.enable = true;
             nix.settings.experimental-features = "nix-command flakes";
             # Enable alternative shell support in nix-darwin.
             # programs.zsh.enable = true;
@@ -135,7 +135,7 @@
                 SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
             };
 
-            security.pam.enableSudoTouchIdAuth = true;
+            security.pam.services.sudo_local.touchIdAuth = true;
 
             # The platform the configuration will be used on.
             nixpkgs.hostPlatform = "aarch64-darwin";

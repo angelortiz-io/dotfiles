@@ -39,7 +39,6 @@
                 ll = "eza -lF --color-scale --no-user --no-time --no-permissions --group-directories-first --icons -a";
                 ls = "eza -lF --group-directories-first --icons -a";
                 ".." = "cd ..";
-		update-nix = "darwin-rebuild switch --flake ~/.config/nix-darwin";
             };
             history = {
                 save = 1;
@@ -50,7 +49,7 @@
               eval "$(/etc/profiles/per-user/coder/bin/mise activate zsh)"
 
               if type gcloud &>/dev/null; then
-                source $(gcloud info --format="value(config.paths.bash_completion)" || true)
+                source $(gcloud --format="value(config.paths.bash_completion)" || true)
               fi
             '';
         };
