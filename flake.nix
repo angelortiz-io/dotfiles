@@ -45,7 +45,7 @@
                     "ghostty"
                     "brave-browser"
                     "google-chrome"
-		            "google-chrome@canary"
+		    "google-chrome@canary"
                     "whatsapp"
                     "slack"
                     "lm-studio"

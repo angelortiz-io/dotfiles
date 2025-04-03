@@ -12,6 +12,7 @@
             starship
             htop
             mise
+	    uv
             awscli2
             google-cloud-sdk
         ];
@@ -48,9 +49,9 @@
               eval "$(starship init zsh)"
               eval "$(/etc/profiles/per-user/coder/bin/mise activate zsh)"
 
-              if type gcloud &>/dev/null; then
-                source $(gcloud --format="value(config.paths.bash_completion)" || true)
-              fi
+              #if type gcloud &>/dev/null; then
+              #  source $(gcloud --format="value(config.paths.bash_completion)" || true)
+              #fi
             '';
         };
         awscli = {
