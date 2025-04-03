@@ -37,6 +37,7 @@
             autosuggestion.enable = true;
             syntaxHighlighting.enable = true;
             shellAliases = {
+	    	update-nix = "cd ~/.config/nix-darwin && nix flake update && darwin-rebuild switch --flake ~/.config/nix-darwin";
                 ll = "eza -lF --color-scale --no-user --no-time --no-permissions --group-directories-first --icons -a";
                 ls = "eza -lF --group-directories-first --icons -a";
                 ".." = "cd ..";
