@@ -43,7 +43,7 @@
                 ".." = "cd ..";
             };
             history = {
-                save = 1;
+                save = 10000;
                 size = 10000;
             };
             initExtra = ''
