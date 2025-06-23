@@ -26,6 +26,8 @@
                 enable = true;
                 brews = [
                     "mas"
+                    "mkvtoolnix"
+                    "handbrake"
                 ];
                 casks = [
                     "visual-studio-code"
@@ -51,7 +53,10 @@
                     "lm-studio"
                     "transmission"
                     "zoom"
+                    "anydesk"
                     "android-studio"
+                    "vlc"
+                    "qbittorrent"
                 ];
 
                 masApps = {
@@ -70,7 +75,8 @@
             # Enable alternative shell support in nix-darwin.
             # programs.zsh.enable = true;
             system.configurationRevision = self.rev or self.dirtyRev or null;
-            # Used for backwards compatibility, please read the changelog before changing.
+            system.primaryUser = "coder";
+	    # Used for backwards compatibility, please read the changelog before changing.
             # $ darwin-rebuild changelog
             system.stateVersion = 5;
             system.defaults = {
@@ -101,6 +107,7 @@
                         "/Applications/Microsoft Excel.app"
                         "/Applications/Microsoft PowerPoint.app"
                         "/System/Applications/Music.app"
+                        "/Applications/VLC.app"
                         "/System/Applications/App Store.app"
                         "/System/Applications/System Settings.app"
                     ];

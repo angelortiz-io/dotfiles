@@ -37,7 +37,7 @@
             autosuggestion.enable = true;
             syntaxHighlighting.enable = true;
             shellAliases = {
-	    	update-nix = "cd ~/.config/nix-darwin && nix flake update && darwin-rebuild switch --flake ~/.config/nix-darwin";
+	    	update-nix = "cd ~/.config/nix-darwin/flakes && nix flake update && darwin-rebuild switch --flake ~/.config/nix-darwin/flakes";
                 ll = "eza -lF --color-scale --no-user --no-time --no-permissions --group-directories-first --icons -a";
                 ls = "eza -lF --group-directories-first --icons -a";
                 ".." = "cd ..";
@@ -46,7 +46,7 @@
                 save = 10000;
                 size = 10000;
             };
-            initExtra = ''
+            initContent = ''
               eval "$(starship init zsh)"
               eval "$(/etc/profiles/per-user/coder/bin/mise activate zsh)"
 
